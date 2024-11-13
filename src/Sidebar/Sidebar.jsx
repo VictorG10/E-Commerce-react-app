@@ -4,7 +4,7 @@ import Category from "./Categories/Category";
 import Price from "./Price/Price";
 import Colors from "./Colors/Colors";
 
-const Sidebar = () => {
+const Sidebar = ({ handleRadioChange }) => {
   return (
     <>
       <section className="sidebar">
@@ -12,9 +12,9 @@ const Sidebar = () => {
           <h1>🛒</h1>
         </div>
 
-        <Category />
-        <Price />
-        <Colors />
+        <Category handleRadioChange={handleRadioChange} />
+        <Price handleRadioChange={handleRadioChange} />
+        <Colors handleRadioChange={handleRadioChange} />
       </section>
     </>
   );

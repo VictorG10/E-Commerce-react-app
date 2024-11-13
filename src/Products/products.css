@@ -16,6 +16,7 @@
 .card-img {
   width: 13rem;
   margin-bottom: 1rem;
+  object-fit: contain;
 }
 
 /* .card-details  */
